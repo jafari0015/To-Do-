@@ -1,8 +1,9 @@
 import React, {useState} from 'react'
+// import Image from  '<img src="/error.png" alt="Error" />'
 const Error = () => {
   return (
     <div className='error-image'>
-      <img src="src/assets/images (1).png" alt="We don't have nothing" />
+       <img src="/error.png" alt="" />
         <h1 className='nothing'>
           We have nothing to do <br />
         </h1>
