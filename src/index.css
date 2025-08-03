@@ -1,0 +1,217 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.to-do-container{
+  box-shadow: 8px 8px 20px rgba(0,0,0,0.1), -8px -8px 20px rgba(0,0,0,0.1);
+  border-radius: 15px; 
+  max-width: 100%;
+  max-height: 100%;
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 50px;  
+}
+.header-todo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+}
+.header-todo h1{
+  color: #2d2d2d;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.header-todo p{
+  color: #2d2d2d;
+  font-size: 2rem;
+}
+.btn-component{
+  position: relative;
+}
+.button-add {
+  float: right;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.button-add button {
+  box-shadow: 8px 8px 20px rgba(0,0,0,0.1), -8px -8px 20px rgba(0,0,0,0.1);
+  padding: 15px;
+  border-radius: 3rem;
+  background-color: #9929EA;
+  border: none;
+  cursor: pointer;
+}
+.button-add button i{
+  font-size: 1.5rem;
+  color: #f4f4f4;
+}
+.nothing{
+  color: #2d2d2d;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 400px;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.error-image img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50px;
+  margin: 40px 80px 0 80px;
+  margin-top: 40px;
+}
+.error-image p{
+  text-align: center;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #2d2d2d;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+.addTaskForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  margin: auto;
+  gap: 12px;
+  margin: 40px;
+  padding: 30px;
+  border-radius: 0.55rem;
+  box-shadow: 8px 8px 20px rgba(0,0,0,0.1), -8px -8px 20px rgba(0,0,0,0.1);
+  position: relative;
+
+}
+.addTaskForm input{
+  border: none;
+  width: 300px;
+  margin-top: 30px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 12px;
+  border-radius: 0.45rem;
+  font-size: 14px;
+  outline: none;
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,0.1);
+}
+.addTaskForm .submitBtn{
+  background-color: #9929EA;
+  color: #f4f4f4;
+  padding: 10px;
+  box-shadow: 8px 8px 20px rgba(0,0,0,0.1), -8px -8px 20px rgba(0,0,0,0.1);
+  border: none;
+  cursor: pointer;
+  margin-top: 30px;
+  border-radius: 0.45rem;
+}
+.closeBtn{
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  box-shadow: 8px 8px 20px rgba(0,0,0,0.1), -8px -8px 20px rgba(0,0,0,0.1);
+  padding: 8px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 0.45rem;
+  color: #9929EA;
+  background-color: #fff;
+}
+.header-title{
+  position: absolute;
+  top: 10px;
+  margin-right: 50px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #2d2d2d;
+}
+.list-task {
+  max-width: 100%;
+  width: 350px;
+  margin: 40px;
+  border: none;
+  padding: 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  border-radius: 0.55rem;
+  box-shadow: 8px 8px 20px rgba(0,0,0,0.1), -8px -8px 20px rgba(0,0,0,0.1);
+
+}
+.listStyleItem {
+  color: #2d2d2d;
+  background-color: #f4f4f4;
+  font-size: 15px;
+  list-style: none;
+  line-height: 28px;
+  padding: 10px;
+  border-radius: 0.65rem;
+  margin-top: 12px;
+  border: 1px solid rgba(0,0,0,0.1);
+}
+.listStyleItem {
+  cursor: pointer;
+}
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+.startEditing , .deleteTask ,.saveEdit ,.cancelEdit{
+  color: #9929EA;
+  border: none;
+  font-size: 1.5rem;
+  float: right;
+  cursor: pointer;
+  margin-right: 5px;
+}
+.border{
+  background-color: #2d2d2d;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 15px;
+  color: #f4f4f4;
+}
+@media (max-width:1024px) {
+   .to-do-container{
+    margin-top: 100px;
+   }
+
+}
+@media  (max-width: 768px) {
+       .to-do-container{
+          max-width: 350px;
+          margin-left: 20px;
+          margin-right: 20px;
+       }
+       .error-image{
+        margin-left: -40px;
+       }
+       .nothing{
+        text-align: center;
+        margin-left: 50px;
+       }
+       .error-image p{
+        margin-left: 40px;
+       }
+       .addTaskForm{
+        width: 320px;
+        margin: 30px 15px 30px 15px;
+       }
+       .list-task{
+                width: 320px;
+        margin: 30px 15px 30px 15px;
+       }
+}
+@media (max-width:360px) {
+    .to-do-container{
+      max-width: 330px;
+    }
+    .addTaskForm ,.list-task{
+      width: 300px;
+    }
+}
