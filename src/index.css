@@ -215,4 +215,8 @@
     .addTaskForm ,.list-task{
       width: 300px;
     }
+    .cancelEdit{
+      margin-right: 35px;
+      margin-top: -25px;
+    }
 }
